@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <style>
+      .cell {
+        width: 100%;
+      }
+      #canvas {
+        border: 1px solid black;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+      table {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      td {
+        border: 1px solid black;
+        padding: 2px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="grid">
+      <div class="cell">
+        <canvas id="canvas" width="500px" height="500px"></canvas><br />
+        <input id="color" name="color" type="text" placeholder="Color" />
+        <button onclick="drawRect()">Draw Rectangle</button>
+      </div>
+      <div>
+        <table id="table"></table>
+      </div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+  <script>
+    const home = true;
+  </script>
+  <script src="utils.js"></script>
+  <script src="main.js"></script>
+</html>

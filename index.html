@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <style>
+      .error {
+        color: red;
+        margin: 0;
+        height: 1em;
+      }
+      #form {
+        display: grid;
+        row-gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Complete the form</h2>
+    <form
+      name="form"
+      action="home.html"
+      onsubmit="return validateForm()"
+      id="form"
+      method="POST"
+    >
+      <label for="name">Username</label>
+      <input name="name" type="text" />
+      <p class="error" id="e-name"></p>
+      <label for="psswd">Password</label>
+      <input name="psswd" type="password" />
+      <p class="error" id="e-psswd"></p>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+  <script src="utils.js"></script>
+  <script src="main.js"></script>
+</html>
